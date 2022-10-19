@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasta Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="player">
+        
+        <div class="details">
+            <div class="now-playing">Playing x of y</div>
+            <div class="track-art"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Artist Name</div>
+        </div>
+
+        <div class="buttons">
+            <div class="prev-track">
+                <i class="fa fa-step-backward fa-2x" onclick="prevTrack()"></i>
+            </div>
+            <div class="play-pause">
+                <i class="fa fa-play-circle fa-5x" ></i>
+            </div>
+            <div class="next-track">
+                <i class="fa fa-step-forward fa-2x" onclick="nextTrack()"></i>
+            </div>
+        </div>
+        
+        <div class="slider">
+            <div class="current-time">00:00</div>
+            <input type="range" min="0" max="100" value="0" class="track-seeker">
+            <div class="total-duration">00:00</div>
+        </div>
+        
+        <div class="slider">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="70" class="volume-seeker">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+    <script src="sasta-spotify.js"></script>
+</body>
+
+</html>
